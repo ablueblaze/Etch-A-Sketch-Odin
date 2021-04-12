@@ -1,3 +1,33 @@
 body {
     background-color: darkslategray;
 }
+
+.container {
+    display: grid;
+    text-align: center;
+}
+
+.colum{
+    display: inline-block;
+    background-color: rgba(0, 57, 163, 0.89);
+    /* padding: 1em; */
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    /* for when I make it small */
+    /* width: 1px; */
+}
+
+.row {
+    background-color: dodgerblue;
+    padding: 1em;
+    /* height: 1px;
+    width: 1px; */
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.col {
+    
+}
