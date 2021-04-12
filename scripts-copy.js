@@ -1,11 +1,11 @@
-function makeGrid() {
+function makeGrid(){
     let element = "";
     let element2 = "";
-    for (let i = 1; i < 17; i++) {
+    for (let i = 1; i < 17; i++){
         for (let n = 0; n < 17; n++) {
-            if (n !== 0) {
-                element2 += `<div class="button" id="${[i, n]}"></div>`;
-            } else { element2 = ""; }
+            if (n !== 0){
+                element2 += `<div class="button" id="${[i,n]}"></div>`;
+            } else {element2 = "";}
         }
         element += `<div class="colum">${element2}</div>`;
     }
