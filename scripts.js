@@ -2,18 +2,31 @@ function makeGrid(){
     let element = "";
     let element2 = "";
     for (let n = 0; n < 16; n++) {
-        element2 += '<div class="row"></div>';
+        element2 += '<div class="button"></div>';
     }
     for (let i = 0; i < 16; i++){
         element += `<div class="colum">${element2}</div>`;
     }
-    const container = document.getElementById("container");
+    const container = document.getElementById("grid");
     container.innerHTML = element;
 }
 
 makeGrid();
 
+function test(){
+    console.log("test");
+}
+const shift = document.querySelectorAll(".button").forEach(item => {
+    item.addEventListener('mouseover', event => {
+        test();
+    })
+});
 
+// shift.addEventListener('click', function (event) {
+//     test();
+// })
+
+// shift.onmouseover = test();
 
 
 

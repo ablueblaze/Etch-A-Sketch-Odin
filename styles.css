@@ -8,11 +8,11 @@ body {
     align-items: center;
 }
 
-.grid {
+/* #grid {
     display: grid;
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 .colum{
     display: inline-block;
