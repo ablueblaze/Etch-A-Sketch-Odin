@@ -2,15 +2,21 @@ body {
     background-color: darkslategray;
 }
 
-.container {
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
     display: grid;
     text-align: center;
+    margin: 0 auto;
 }
 
 .colum{
     display: inline-block;
     background-color: rgba(0, 57, 163, 0.89);
-    /* padding: 1em; */
     border-style: solid;
     border-color: black;
     border-width: 1px;
@@ -18,7 +24,7 @@ body {
     /* width: 1px; */
 }
 
-.row {
+.button {
     background-color: dodgerblue;
     padding: 1em;
     /* height: 1px;
