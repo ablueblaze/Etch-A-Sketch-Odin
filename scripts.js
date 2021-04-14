@@ -1,43 +1,65 @@
 function makeGrid() {
-    let element = "";
-    let element2 = "";
-    for (let i = 1; i < 17; i++) {
-        for (let n = 0; n < 17; n++) {
-            if (n !== 0) {
-                element2 += `<div class="button" id="${[i, n]}"></div>`;
-            } else { element2 = ""; }
-        }
-        element += `<div class="colum">${element2}</div>`;
-    }
     const container = document.getElementById("grid");
-    container.innerHTML = element;
+    for (let i = 0; i < 16; i++) {
+        let colum = document.createElement('div');
+        colum.className = "colum"
+        container.append(colum);
+        for (let n = 0; n < 16; n++) {
+            let div = document.createElement('div');
+            div.onmouseover = function(){
+                div.setAttribute("class", "color");
+            }
+            colum.append(div);
+        }
+    }
 }
-// I need to assign an ID to each of the buttons.
-
 
 makeGrid();
 
-function test(){
-    console.log("test");
-}
-
-const shift = document.querySelectorAll(".button").forEach(item => {
-    item.addEventListener('mouseover', event => {
-        test();
-    })
-});
 
 
 
+
+
+
+
+
+/////////////////// Kinda works, but not really.
+// const shift = document.querySelectorAll(".button");
+
+// function test(){
+    //     console.log("test");
+    //     // shift.classList.remove('color');
+    //     // shift.classList.add('changedColor');
+    // }
+    
+    // shift.forEach(item => {
+        //     item.addEventListener('mouseover', event => {
+            //         test();
+            //         document.shift.classList.add('test')
+            //     })
+            // });
+            /////////////////
+            
+            
+            
+            
+            
+// div.onmouseover = function() {
+//     document.getElementsByTagName('div')[-1].classList.add('color');
+// }
+            
+            
+            
+// I need to assign an ID to each of the buttons.
+
+// document.querySelector('.button').cssText = "padding: 5px;";
 
 // shift.addEventListener('click', function (event) {
-//     test();
+    //     test();
 // })
 
 // shift.onmouseover = test();
-
-
-
 
 // for (let i = 0; i < 16; i++){
 //     const div = document.createElement('div');
