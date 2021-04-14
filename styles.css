@@ -8,32 +8,21 @@ body {
     align-items: center;
 }
 
-/* #grid {
-    display: grid;
-    text-align: center;
-    margin: 0 auto;
-} */
 
 .colum{
     display: inline-block;
-    background-color: rgba(0, 57, 163, 0.89);
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    /* for when I make it small */
-    /* width: 1px; */
 }
 
-.button {
-    background-color: dodgerblue;
+
+.colum div {
+    background-color: rebeccapurple;
     padding: 1em;
-    /* height: 1px;
-    width: 1px; */
     border-style: solid;
     border-color: black;
     border-width: 1px;
 }
 
-.col {
-    
+.color {
+    background-color: dodgerblue !important;
 }
+
