@@ -1,43 +1,53 @@
-function makeGrid(){
+function makeGrid() {
     let element = "";
     let element2 = "";
-    for (let i = 1; i < 17; i++){
-        for (let n = 0; n < 17; n++) {
-            if (n !== 0){
-                element2 += `<div class="button" id="${[i,n]}"></div>`;
-            } else {element2 = "";}
+    for (let i = 0; i < 16; i++) {
+        for (let n = 0; n < 16; n++) {
+            if (n !== 0) {
+                element2 += `<div class="button color"  id="${[i, n]}"></div>`;
+            } else { element2 = ""; }
         }
         element += `<div class="colum">${element2}</div>`;
     }
     const container = document.getElementById("grid");
     container.innerHTML = element;
 }
-// I need to assign an ID to each of the buttons.
-
 
 makeGrid();
 
-function test(){
+/////////////////// Kinda works, but not really.
+const shift = document.querySelectorAll(".button");
+
+function test() {
     console.log("test");
+    // shift.classList.remove('color');
+    // shift.classList.add('changedColor');
 }
 
-const shift = document.querySelectorAll(".button").forEach(item => {
+shift.forEach(item => {
     item.addEventListener('mouseover', event => {
         test();
+        document.shift.classList.add('test')
     })
 });
+/////////////////
 
 
 
+
+
+
+
+
+// I need to assign an ID to each of the buttons.
+
+// document.querySelector('.button').cssText = "padding: 5px;";
 
 // shift.addEventListener('click', function (event) {
 //     test();
 // })
 
 // shift.onmouseover = test();
-
-
-
 
 // for (let i = 0; i < 16; i++){
 //     const div = document.createElement('div');
@@ -46,7 +56,7 @@ const shift = document.querySelectorAll(".button").forEach(item => {
 //     div.appendChild(node);
 
 //     element.innerHTML = div
-    
+
 //     const container = document.getElementById('container');
 //     container.appendChild(div);
 
@@ -55,7 +65,7 @@ const shift = document.querySelectorAll(".button").forEach(item => {
     //     div2.classList.add('row')
     //     const node2 = document.createTextNode("test");
     //     div2.appendChild(node2);
-        
+
     // }
 // }
 
