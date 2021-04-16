@@ -1,12 +1,12 @@
-function makeGrid(columns, rows) {
+function makeGrid(spots) {
     const container = document.getElementById("grid");
-    for (let i = 0; i < columns; i++) {
+    for (let i = 0; i < spots; i++) {
         let colum = document.createElement('div');
         colum.className = "colum"
         container.append(colum);
-        for (let n = 0; n < rows; n++) {
+        for (let n = 0; n < spots; n++) {
             let div = document.createElement('div');
-            // div.style.padding = `${Math.floor(500 / (columns + rows))}px`;
+            div.style.padding = `${500 / (spots*2)}px`;
             div.onmouseover = function(){
                 div.setAttribute("class", "color");
             }
@@ -15,7 +15,7 @@ function makeGrid(columns, rows) {
     }
 }
 
-makeGrid(30, 30);
+makeGrid(50);
 
 function autoSize(column, row){
 }
