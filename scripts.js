@@ -1,5 +1,6 @@
 function makeGrid(spots) {
     const container = document.getElementById("grid");
+    container.textContent = '';
     for (let i = 0; i < spots; i++) {
         let colum = document.createElement('div');
         colum.className = "colum"
@@ -17,8 +18,27 @@ function makeGrid(spots) {
 
 makeGrid(50);
 
-function autoSize(column, row){
+let clear = document.getElementById("clear");
+let gridSize = document.getElementById("gridSize");
+
+function sizeOfGrid() {
+    let currentVal = gridSize.value;
+    return currentVal;
 }
+
+gridSize.addEventListener('change', function (event) {
+    makeGrid(sizeOfGrid());
+})
+
+clear.addEventListener('click', function (event) {
+    makeGrid(sizeOfGrid());
+})
+
+
+// function reset() {
+//     document.getE
+// }
+
 
 
 
