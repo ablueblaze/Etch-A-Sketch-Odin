@@ -2,11 +2,18 @@ body {
     background-color: rgb(209, 209, 209);
 }
 
+.header {
+    height: 100px;
+    font-size: 5em;
+    text-align: center;
+}
+
 .bigContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 #grid {
     box-sizing: border-box;
@@ -26,11 +33,21 @@ body {
 
 
 .colum div {
-    background-color: rgb(9, 0, 131);
+    background-color: rgb(52, 154, 255);
     border-radius: 8px;
 }
 
 .color {
-    background-color: rgb(52, 154, 255) !important;
+    background-color: rgb(9, 0, 131) !important;
+    /* background-color: randomColor; */
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gridSizer {
+    text-align: center;
 }
 

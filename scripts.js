@@ -20,13 +20,26 @@ makeGrid(50);
 
 let clear = document.getElementById("clear");
 let gridSize = document.getElementById("gridSize");
+let outputValue = document.getElementById("value");
+let para = document.createElement('p');
 
 function sizeOfGrid() {
     let currentVal = gridSize.value;
     return currentVal;
 }
 
+outputValue.textContent = sizeOfGrid();
+
+
+// outputValue.addEventListener('input', function (event) {
+//     outputValue.textContent = '';
+//     outputValue.append(sizeOfGrid());
+
+// })
+
 gridSize.addEventListener('change', function (event) {
+    outputValue.textContent = '';
+    outputValue.textContent = sizeOfGrid();
     makeGrid(sizeOfGrid());
 })
 

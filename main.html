@@ -8,9 +8,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header">Etch A Sketch!</div>
     <div class="bigContainer">
-        <div class="header"></div>
         <div id="grid"></div>
+        
+    </div>
+    <div class="buttons">
+        <button id="clear">Clear pad</button>
+        <div class="gridSizer">
+            <p>Set grid size(10-100): <input type="range" name="grid" id="gridSize" min="10" max="100"> <span id="value"></span></p>
+        </div>
     </div>
 </body>
 <script src="scripts.js"></script>
