@@ -19,7 +19,7 @@ This was my first project after I decided to start taking coding seriously. It's
 
 ### Links
 
-[Project Demo](Demo.Url)
+[Project Demo](https://fluffy-croissant-7df646.netlify.app/)
 
 [Github Repo](https://github.com/ablueblaze/Etch-A-Sketch-Odin)
 
